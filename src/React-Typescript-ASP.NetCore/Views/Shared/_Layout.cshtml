@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+
+    <environment names="Development">
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+    <environment names="Staging,Production">
+        <link href="~/css/site.min.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    <environment names="Development">
+        <script src="~/libs/react.js"></script>
+        <script src="~/libs/react-dom.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/libs/react.min.js"></script>
+        <script src="~/libs/react-dom.min.js"></script>
+    </environment>
+</body>
+</html>

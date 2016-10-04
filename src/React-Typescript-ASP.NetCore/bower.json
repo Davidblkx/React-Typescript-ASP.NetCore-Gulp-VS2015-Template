@@ -1,0 +1,21 @@
+{
+  "name": "react-typescript-asp.netcore",
+  "description": "Startup point for using react, typescript and asp.net core",
+  "main": "index.js",
+  "authors": [
+    "David Pires"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.3.2"
+  }
+}
